@@ -1,0 +1,50 @@
+header {
+    background-color: #07dbeb;
+    padding: 20px 0;
+    text-align: center;
+}
+body {
+   background-color: rgb(253, 127, 222) ;
+}
+.rectangles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+.rectangle {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;            
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+.rectangle-title {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #07dbeb;
+}
+.square {
+    width: 70px;
+    height: 70px;
+    background-color: #07dbeb;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 14px;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+
+}
+.active-square {
+    background-color: #2ecc40 !important;
+    color: #fff;
+}
