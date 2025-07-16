@@ -1,21 +1,24 @@
 header {
-    background-color: #07dbeb;
+    background-color: #144C59;
     padding: 20px 0;
     text-align: center;
+    color: #ffffff;
+    font-size: 3.5em;
+    font-weight: bold;
 }
 body {
-    background-color: rgb(253, 127, 222);
+    background-color: #8FB4C4;
     background-image: url('eevee.png');
     background-repeat: repeat;
-    background-size: 250px;
+    background-size: 280px;
 }
 .rectangles-container {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 10px;
+    gap: 35px;
     width: 100%;
-    max-width: 950px; 
+    max-width: 2000px; 
     margin: 0 auto;
 }
 
@@ -28,35 +31,52 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     box-sizing: border-box; 
     user-select: none;
+    perspective: 800px;
 }
 
 .rectangle-title {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 2.2em;
     font-weight: bold;
     margin-bottom: 8px;
     color: #000000;
     user-select: none;
 }
 .square {
-    width: 80px;
-    height: 80px;
-    background-color: #07dbeb;
+    width: 150px;
+    height: 150px;
+    background-color: #498494;
     border-radius: 8px;
     display: inline-block;
-    margin: 14px;
+    margin: 40px;
     border: 2px solid #fff;
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-    color: #000000;           
-    font-size: 1.1em;         
+    box-shadow: 1px 1px 4px rgba(0, 0, 1, 0.15);
+    font-size: 2.1em;
     font-family: 'Arial', sans-serif;
-    text-align: center;      
-    line-height: 30px;       
-    font-weight: bold;     
-    user-select: none;  
+    text-align: center;
+    font-weight: bold;
+    user-select: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    position: relative;
+}
 
-}
-.active-square {
+.square.flipped {
     background-color: #2ecc40 !important;
-    color: #fff;
 }
+
+.square-content {
+    color: #ffffff;
+    line-height: 150px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    backface-visibility: hidden;
+    font-size: 0.8em;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    user-select: none;
+}
+
